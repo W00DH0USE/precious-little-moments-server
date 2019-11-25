@@ -248,12 +248,7 @@ Authorization: Bearer ${token}
 
 ## Features
 - Create Account
-- Create a Post
-- Comment on Posts
-- See Comments on Posts
-- Like Posts
-- Unlike Posts
-- Track money saved and days off addiction
-- Update Posts
-- Delete Posts 
+- Create a Moment
+- Update Moment
+- Delete Moment
 - Delete Account
