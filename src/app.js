@@ -3,24 +3,22 @@ const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
 const helmet = require('helmet')
-const { NODE_ENV } = require('./config')
+const { NODE_ENV, API_KEY } = require('./config')
 const postsRouter = require('./posts/posts-router')
 const usersRouter = require('./user/user-router')
 const authRouter = require('./auth/auth-router')
 
 const app = express()
 
-const morganOption = (NODE_ENV === 'production')
-  ? 'tiny'
-  : 'common';
+const morganSetting = process.env.NODE_ENV === 'production' ? 'tiny' : 'common'
 
-app.use(morgan(morganOption))
+app.use(morgan(morganSetting))
 app.use(cors())
 app.use(helmet())
 
-app.use('/api/posts', postsRouter)
-app.use('/api/users', usersRouter)
-app.use('/api/auth', authRouter)
+app.use(`/${API_KEY}/posts`, postsRouter)
+app.use(`/${API_KEY}/users`, usersRouter)
+app.use(`/${API_KEY}/auth`, authRouter)
 
 app.get('/', (req, res) => {
   res.send('Hello, PLM-Database')
