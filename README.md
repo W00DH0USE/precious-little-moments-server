@@ -2,9 +2,19 @@
 
 Precious Little Moments is an App that allows parents or guardians of children to save and share those precious moments you have of them. Look back on your time with them a year, a month, and a week ago. See how your lives have changed over time and the progress your little ones have made. Remember those moments and experiences and never forget the magic of that moment. Reading your memories is as easy as registering, logging in, writing a new entry and hitting create.
 
+#### GitHub Repo: [Precious Little Moments Client](https://github.com/W00DH0USE/precious-little-moments/)
+
 ## Demo
 
-- [Live Demo]('https://?')
+- [Live Demo]('https://preciouslittlememories-client-master.now.sh/')
+
+## Screenshots
+
+![Precious Little Moments Home Page](./public/images/home.png)
+![Precious Little Moments Register Page](./public/images/register.png)
+![Precious Little Moments Login Page](./public/images/login.png)
+![Precious Little Moments Profile Page](./public/images/profile.png)
+![Precious Little Moments Create Moment Page](./public/images/create-moment.png)
 
 ## Installing
 
