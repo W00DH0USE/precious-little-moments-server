@@ -9,11 +9,15 @@ Precious Little Moments is an App that allows parents or guardians of children t
 - [Live Demo]('https://preciouslittlememories-client-master.now.sh/')
 
 ## Screenshots
-
+### Landing Page
 ![Precious Little Moments Home Page](./public/images/home.png)
+### Register Page
 ![Precious Little Moments Register Page](./public/images/register.png)
+### Login Page
 ![Precious Little Moments Login Page](./public/images/login.png)
+### Profile Page
 ![Precious Little Moments Profile Page](./public/images/profile.png)
+### Create A Moment Page
 ![Precious Little Moments Create Moment Page](./public/images/create-moment.png)
 
 ## Installing
