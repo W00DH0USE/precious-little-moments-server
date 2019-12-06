@@ -41,7 +41,7 @@ postsRouter
     const post = { post_title, post_content, owner } 
 
     for (const [key, value] of Object.entries(post))
-      if (value == null)
+      if (value === null)
         return res.status(400).json({
           error: { message: `Missing '${key}' in body request`}
         });
