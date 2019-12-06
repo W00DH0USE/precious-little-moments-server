@@ -24,7 +24,7 @@ usersRouter
     for (const field of ['first_name', 'last_name', 'email', 'password'])
       if (!req.body[field])
         return res.status(400).json({
-          error: { message: `Missing '${field} in body request`}
+          error: `Missing '${field}' in request body`
         });
     
     const passwordError = UsersService.validatePassword(password)
@@ -38,7 +38,7 @@ usersRouter
     )
     .then(hasUserWithEmail => {
       if (hasUserWithEmail)
-        return res.status(400).json({ error: `Email in use`})
+        return res.status(400).json({ error: `An account with that email already exists! Please try logging in.` })
 
       return UsersService.hashPassword(password)
         .then(hashedPassword => {
